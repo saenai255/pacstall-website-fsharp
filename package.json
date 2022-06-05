@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "dotnet tool restore",
+    "dev": "dotnet fable watch src -o .watch -e .mjs --noCache --runWatch node ./.watch/App.mjs",
+    "start": "node ./out/App.mjs",
+    "build": "dotnet fable src  --noCache -o dist -e .mjs --optimisize"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "cross-env": "^7.0.3",
+    "ts2fable": "^0.7.1",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "typeorm": "^0.3.6"
+  }
+}

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="shim/TypeORM.fs" />
+    <Compile Include="shim/Express.fs" />
+    <Compile Include="fs/PacScript.fs" />
+    <Compile Include="fs/App.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" Version="3.2.3" />
+    <PackageReference Include="Fable.Node" Version="1.2.0" />
+    <PackageReference Include="Fable.SimpleJson" Version="3.23.0" />
+  </ItemGroup>
+</Project>
